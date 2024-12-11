@@ -5,16 +5,16 @@
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
     "buildCommand": "vite build",
     "outputDirectory": "public",
     "env": {
-        "APP_ENV": "development",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://yourproductionurl.com",
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://zyncoecommerce.vercel.app/",
         "APP_KEY": "base64:wnl0nFBsexedu4FRIB75ThqFXgByXgPeujQL6G5gbZQ=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
