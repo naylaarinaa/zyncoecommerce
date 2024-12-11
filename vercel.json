@@ -11,9 +11,6 @@
     "public": true,
     "buildCommand": "vite build",
     "outputDirectory": "public",
-    "engines": {
-        "node": "18.x"
-    },
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
